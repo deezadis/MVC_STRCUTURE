@@ -1,0 +1,179 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "ระบบเครื่องคิดเลข",
+      "version": "1",
+      "title": "calculator"
+    },
+    "host": "localhost:3000",
+    "tags": [
+      {
+        "name": "cal"
+      }
+    ],
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/sum": {
+        "post": {
+          "tags": [
+            "plus number"
+          ],
+          "summary": "plus",
+          "consumes": [
+            "application/x-www-form-urlencoded"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "a",
+              "in": "formData",
+              "description": "a",
+              "required": true,
+              "type": "integer",
+              "default": "111"
+            },
+            {
+              "name": "b",
+              "in": "formData",
+              "description": "b",
+              "required": true,
+              "type": "integer",
+              "default": "222"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Update",
+              "schema": {
+                "example": "success"
+              }
+            }
+          }
+        }
+      },
+      "/minus": {
+        "post": {
+          "tags": [
+            "Minus number"
+          ],
+          "summary": "minus",
+          "consumes": [
+            "application/x-www-form-urlencoded"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "a",
+              "in": "formData",
+              "description": "a",
+              "required": true,
+              "type": "integer",
+              "default": "111"
+            },
+            {
+              "name": "b",
+              "in": "formData",
+              "description": "b",
+              "required": true,
+              "type": "integer",
+              "default": "222"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Update",
+              "schema": {
+                "example": "success"
+              }
+            }
+          }
+        }
+      },
+      "/multiply": {
+        "post": {
+          "tags": [
+            "Multiply number"
+          ],
+          "summary": "multiply",
+          "consumes": [
+            "application/x-www-form-urlencoded"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "a",
+              "in": "formData",
+              "description": "a",
+              "required": true,
+              "type": "integer",
+              "default": "111"
+            },
+            {
+              "name": "b",
+              "in": "formData",
+              "description": "b",
+              "required": true,
+              "type": "integer",
+              "default": "222"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Update",
+              "schema": {
+                "example": "success"
+              }
+            }
+          }
+        }
+      },
+      "/divide": {
+        "post": {
+          "tags": [
+            "Divide number"
+          ],
+          "summary": "divide",
+          "consumes": [
+            "application/x-www-form-urlencoded"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "a",
+              "in": "formData",
+              "description": "a",
+              "required": true,
+              "type": "integer",
+              "default": "111"
+            },
+            {
+              "name": "b",
+              "in": "formData",
+              "description": "b",
+              "required": true,
+              "type": "integer",
+              "default": "222"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Update",
+              "schema": {
+                "example": "success"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
